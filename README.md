@@ -1,7 +1,7 @@
 # freegeoip
 
 This is the source code of the freegeoip software. It contains both
-the web server that empowers freegeoip.net, and a package for the
+the web server that empowers freegeoip.io, and a package for the
 [Go](http://golang.org) programming language that enables any web server
 to support IP geolocation with a simple and clean API.
 
@@ -108,7 +108,7 @@ in different formats.
 Example:
 
 ```bash
-curl freegeoip.net/json/
+curl freegeoip.io/json/
 ```
 
 Returns the geolocation information of your own IP address, the source
@@ -117,7 +117,7 @@ IP address of the connection.
 You can pass a different IP or hostname:
 
 ```bash
-curl freegeoip.net/json/github.com
+curl freegeoip.io/json/github.com
 ```
 
 To lookup the geolocation of `github.com` after resolving its IP address,
@@ -126,7 +126,7 @@ which might be IPv4 or IPv6.
 Responses can also be encoded as JSONP, by adding the `callback` parameter:
 
 ```bash
-curl freegeoip.net/json/?callback=foobar
+curl freegeoip.io/json/?callback=foobar
 ```
 
 Same semantics are available for the `/xml/{ip}` and `/csv/{ip}` endpoints
@@ -178,7 +178,7 @@ and the DB object will load it in background. You can focus on your stuff.
 
 Besides the database part, the package provides an `http.Handler` object
 that you can add to your HTTP server to service IP geolocation lookups with
-the same simplistic API of freegeoip.net. There's also an interface for
+the same simplistic API of freegeoip.io. There's also an interface for
 crafting your own HTTP responses encoded in any format.
 
 ### Install

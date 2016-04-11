@@ -1,7 +1,7 @@
-# Ansible Playbook for freegeoip.net
+# Ansible Playbook for freegeoip.io
 
 This is the ansible playbook used to deploy the public service
-of freegeoip.net on Digital Ocean. It assumes your droplets
+of freegeoip.io on Digital Ocean. It assumes your droplets
 are Ubuntu 14.04 LTS and have private networking to each other.
 
 It deploys the following:
